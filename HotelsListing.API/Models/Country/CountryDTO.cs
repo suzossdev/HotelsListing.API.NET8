@@ -1,8 +1,7 @@
 ﻿using HotelsListing.API.Models.Hotels;
 
-namespace HotelsListing.API.Data;
-
-    public class Country
+namespace HotelsListing.API.Models.Country;
+    public class CountryDTO
     {
         public int Id { get; set; }
 
@@ -10,6 +9,5 @@ namespace HotelsListing.API.Data;
 
         public string ShortName { get; set; }
 
-        public virtual IList<Hotel>? Hotels { get; set; }
-
+        public List<HotelDto> Hotels { get; set; }
     }
